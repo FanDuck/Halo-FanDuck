@@ -1,43 +1,93 @@
-halo-theme-ethereal/├── .github/                     # GitHub 配置│   ├── ISSUE_TEMPLATE/          # Issue 模板│   ├── workflows/│   │   ├── ci.yaml              # 构建、版本检测与发布 Release│   │   ├── cd.yaml              # 发布时同步到 Halo 应用市场│   │   └── codeql.yml           # 代码安全扫描│   └── dependabot.yml           # 依赖自动更新├── .husky/                      # git 钩子├── .nvmrc                       # Node 版本├── i18n/                        # 国际化翻译文件│   ├── default.properties       # 默认语言（英文）│   ├── zh_CN.properties         # 简体中文│   └── zh_TW.properties         # 繁体中文├── public/                      # 静态资源│   ├── assets/                  # JS 脚本、图片等│   ├── fragments/               # Halo 页面片段│   └── gateway_fragments/       # 网关认证片段├── screenshot/                  # 主题截图├── scripts/                     # 构建脚本├── src/│   ├── components/              # 组件│   │   ├── *.astro              # Astro 静态组件│   │   ├── *.svelte             # Svelte 交互组件│   │   ├── control/             # 控件组件│   │   ├── misc/                # 杂项组件│   │   ├── photos/              # 照片相关组件│   │   └── widget/              # 侧边栏小组件│   ├── constants/               # 常量定义│   ├── env.d.ts                 # 环境类型声明│   ├── global.d.ts              # 全局类型声明│   ├── layouts/                 # 页面布局│   │   ├── Layout.astro         # 根布局│   │   └── MainGridLayout.astro # 主网格布局│   ├── pages/                   # 页面模板│   │   ├── index.astro          # 首页│   │   ├── post.astro           # 文章页│   │   ├── archives.astro       # 归档页│   │   ├── tags.astro           # 标签列表│   │   ├── tag.astro            # 标签详情│   │   ├── categories.astro     # 分类列表│   │   ├── category.astro       # 分类详情│   │   ├── photos.astro         # 图库列表│   │   ├── photo.astro          # 图库详情│   │   ├── moment.astro         # 瞬间详情│   │   ├── moments.astro        # 瞬间列表│   │   ├── links.astro          # 友情链接│   │   ├── friends.astro        # 朋友圈│   │   ├── equipments.astro     # 装备展示│   │   ├── portfolio.astro      # 项目集列表│   │   ├── portfolio-detail.astro # 项目集详情│   │   ├── wishes.astro         # 心愿便签│   │   ├── schedule-calendar.astro # 日程日历│   │   ├── schedule-calendar-card.astro # 日程日历卡片组件│   │   ├── timeline.astro        # 时间轴页面│   │   ├── skills.astro          # 技能页面│   │   ├── about.astro           # 关于页面│   │   ├── reward.astro          # 打赏页面│   │   ├── bangumis.astro        # 追番页面│   │   ├── layout.astro          # 插件前台页面契约布局模板│   │   ├── error/               # 错误页面│   │   │   └── 404.astro        # 404 页面│   │   └── page.astro           # 自定义页面│   ├── scripts/                 # 脚本源码│   │   ├── app.ts               # 初始化逻辑│   │   ├── assets/              # 经典脚本源码│   │   └── vendor/              # 第三方脚本│   ├── styles/                  # 全局样式│   ├── types/                   # TypeScript 类型定义│   │   ├── config.ts            # 主题配置类型│   │   └── searchResult.ts      # 搜索结果类型│   └── utils/                   # 工具函数│       └── photos/              # 相册相关工具├── AGENTS.md                    # AI 协作开发约定├── CHANGELOG.md                 # 更新日志├── CONTRIBUTING.md              # 贡献指南├── LICENSE                      # 许可证├── annotation-setting.yaml      # Halo 注解设置├── release.md                   # 发布说明├── astro.config.mjs             # Astro 构建配置├── nodemon.json                 # 开发热更新配置├── settings.yaml                # Halo 主题设置定义├── svelte.config.js             # Svelte 配置├── theme.yaml                   # Halo 主题元信息├── tsconfig.json                # TypeScript 配置├── pnpm-lock.yaml               # pnpm 依赖锁定文件├── pnpm-workspace.yaml          # pnpm 工作区配置└── package.json                 # 项目依赖与脚本
-</details>
+<p align="center">
+  <sub>
+    <strong>✨ HALO 2 个性化博客主题 ✨</strong>
+  </sub>
+</p>
+
+<h1 align="center">🦆 Halo-FanDuck</h1>
+
+<p align="center">
+  一款基于 <a href="https://github.com/AloneNanNan/halo-theme-ethereal">Halo-Theme-Ethereal</a> 深度二次开发的<br>
+  为 <a href="https://github.com/halo-dev/halo">Halo 2</a> 倾心打造的 Fuwari 风格增强型博客主题 💖
+</p>
+
+<p align="center">
+  <a href="https://www.halo.run/"><picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/badge/Halo-%E2%89%A5%202.25-0a84f7.svg?font=space-grotesk&amp;logo=ri%3APiPackageDuotone&amp;mode=dark" /><img alt="Halo Version"src="https://shieldcn.dev/badge/Halo-%E2%89%A5%202.25-0a84f7.svg?mode=light&amp;font=space-grotesk&amp;logo=ri%3APiPackageDuotone" /></picture></a>
+  <a href="https://github.com/FanDuck/Halo-FanDuck"><picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/github/stars/FanDuck/Halo-FanDuck.svg?variant=secondary&amp;theme=violet&amp;font=space-grotesk&amp;mode=dark" /><img alt="GitHub Stars"src="https://shieldcn.dev/github/stars/FanDuck/Halo-FanDuck.svg?variant=secondary&amp;theme=violet&amp;label=Stars&amp;mode=light&amp;font=space-grotesk" /></picture></a>
+  <a href="https://github.com/FanDuck/Halo-FanDuck/releases"><picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/github/downloads/FanDuck/Halo-FanDuck.svg?variant=secondary&amp;theme=cyan&amp;font=space-grotesk&amp;label=GitHub+Downloads&amp;mode=dark" /><img alt="GitHub Downloads"src="https://shieldcn.dev/github/downloads/FanDuck/Halo-FanDuck.svg?variant=secondary&amp;theme=cyan&amp;mode=light&amp;font=space-grotesk&amp;label=GitHub+Downloads" /></picture></a>
+</p>
+
+<p align="center">
+  <strong>👨‍💻 作者：FanDuck ｜ 🌐 个人博客：<a href="https://www.fanduck.org">www.fanduck.org</a></strong>
+</p>
 
 ---
 
-## 💻 开发
+## 📸 界面预览
 
-<a href="https://github.com/FanDuck/halo-theme-ethereal/graphs/contributors">
-  <picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/group/badge/PRs-Welcome!+github/FanDuck/halo-theme-ethereal/contributors+badge/Agent--friendly-AGENTS.md+github/dependabot/FanDuck/halo-theme-ethereal.svg?variant=secondary&amp;font=space-grotesk&amp;mode=dark" /><img alt="For Contributors"src="https://shieldcn.dev/group/badge/PRs-Welcome!+github/FanDuck/halo-theme-ethereal/contributors+badge/Agent--friendly-AGENTS.md+github/dependabot/FanDuck/halo-theme-ethereal.svg?variant=secondary&amp;font=space-grotesk&amp;mode=light" /></picture>
-</a>
-
-> 💡 **面向贡献者**：欢迎参与开发！贡献流程、代码约定与提 PR 规范请阅读 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
->
-> 🤖 **面向 AI 协作者**：仓库根目录提供 [`AGENTS.md`](./AGENTS.md)，内含构建命令、目录约定、Halo/Thymeleaf 约定、常见坑与提交规范。使用 AI 编码工具（Codex / opencode / Cursor 等）贡献前请先阅读。
->
-> ⚙️ 需要 **Node.js >= 22.12.0**（推荐 24.x，见仓库根目录 `.nvmrc`）和 **pnpm**
-
-<p>
-  <a href="https://nodejs.org/"><picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/badge/Node.JS-%3E%3D%2022.12.0-30a043.svg?variant=secondary&amp;logo=nodedotjs&amp;logoColor=ffffff&amp;font=space-grotesk&amp;mode=dark" /><img alt="Node.js"src="https://shieldcn.dev/badge/Node.JS-%3E%3D%2022.12.0-30a043.svg?variant=secondary&amp;logo=nodedotjs&amp;logoColor=ffffff&amp;font=space-grotesk&amp;mode=light" /></picture></a>
-  <a href="https://nodejs.org/"><picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/badge/Recommendation-%3E%3D%2024.x-30a043.svg?variant=secondary&amp;logo=nodedotjs&amp;logoColor=ffffff&amp;font=space-grotesk&amp;mode=dark" /><img alt="Recommendation"src="https://shieldcn.dev/badge/Recommendation-%3E%3D%2024.x-30a043.svg?variant=secondary&amp;logo=nodedotjs&amp;logoColor=ffffff&amp;font=space-grotesk&amp;mode=light" /></picture></a>
-  <a href="https://pnpm.io/"><picture><source media="(prefers-color-scheme: dark)"srcset="https://www.shieldcn.dev/badge/Package_mgr-pnpm-F69220.svg?logo=pnpm&amp;variant=branded&amp;size=sm&amp;mode=dark&amp;font=space-grotesk"><img alt="Package mgr · pnpm"src="https://www.shieldcn.dev/badge/Package_mgr-pnpm-F69220.svg?logo=pnpm&amp;variant=branded&amp;size=sm&amp;mode=light&amp;font=space-grotesk"></picture></a>
+<p align="center">
+  <img src="https://github.com/FanDuck/Halo-FanDuck/raw/main/screenshot/home.png" alt="FanDuck 主题预览" width="800" />
 </p>
 
-```bash
-# 克隆项目
-git clone [https://github.com/FanDuck/halo-theme-ethereal.git](https://github.com/FanDuck/halo-theme-ethereal.git)
-cd halo-theme-ethereal
+---
 
-# 安装依赖
-pnpm install
+## 🌟 主题介绍
 
-# 开发模式（监听文件变更自动重建）
-pnpm dev
+**FanDuck 主题** 是一款为 [Halo 2](https://github.com/halo-dev/halo) 精心雕琢的 Fuwari 风格增强型博客主题。本主题在原优秀作品的基础上进行了视觉微调与功能拓展，旨在为访客和博主带来更加清新优雅、灵活多变且开箱即用的数字花园体验。
 
-# 构建并打包为主题安装包（输出 zip 到 dist/）
-pnpm build
+- **🖼️ 多形态壁纸模式**：支持关闭、横幅、全屏、全屏透明等四种展现形式，图片、视频、动态轮播轻松驾驭，配合底部的波浪动效，灵动感十足！
+- **📐 灵活的布局组合**：支持三栏与两栏自由切换，目录可灵活挂载至左栏或右栏，文章列表封面比例随心所欲。
+- **🧩 丰富的小组件生态**：内置十余种功能各异的侧边栏小组件，支持自由排序、按需吸顶，移动端浏览体验同样丝滑。
+- **🎨 访客实时换肤**：访客可在前台「显示设置」中随心调整主题色相、暗黑模式与卡片样式，打造独一无二的沉浸式阅读空间。
+- **⚡ 极致的交互体验**：全站覆盖流畅的页面过渡动画、深浅色自动切换，完美支持自定义字体和个性化 Logo。
 
-# 仅构建主题模板（输出到 templates/）
-pnpm build:only
+---
 
-# 代码格式化
-pnpm format
-🛠️ 技术栈技术用途类型安全静态页面生成与路由交互组件（Search、LightDarkSwitch）实用优先的样式框架Web 构建工具代码格式化工具页面过渡动画图标系统🙏 致谢Ethereal 的诞生离不开开源社区。非常感谢 jiewenhuang 开发的 halo-theme-fuwari，本项目在其基础上二次开发。由衷感谢以下开源项目：Halo：优秀的 Java 博客系统，本项目的运行平台Fuwari：原始 Astro 主题，本项目的设计基调halo-theme-fuwari：第一款将 Fuwari 风格移植至 Halo 的主题，本项目的直接上游Firefly：清新美观的 Astro 博客主题，本项目大量参考其设计Aemeath：基于 Firefly 二次创作的主题，本项目部分参考其设计Halo Sig：Halo 社区插件与工具链📄 许可证本项目基于 halo-theme-fuwari（MIT 许可）二次开发，遵守原始许可证条款，并采用 MIT License 开源发布。版权声明：Copyright (c) 2024 saicaca - fuwariCopyright (c) 2025 Jevon - halo-theme-fuwariCopyright (c) 2026 FanDuck - Halo-Theme-Ethereal根据 MIT 开源协议，你可以自由使用、修改、分发本项目的代码，但需保留上述版权声明。
+## 🚀 演示站点
+
+| 站点名称 | 站点链接 | 说明 |
+| :--- | :--- | :--- |
+| **🦆 FanDuck · 岛屿** | [https://www.fanduck.org](https://www.fanduck.org/) | 本主题的二创运行站点与精神发源地 |
+
+---
+
+## 📦 安装指南
+
+### 📋 系统要求
+
+- **Halo 版本**：`>= 2.25.0` 🚀
+
+### 🛠️ 手动安装步骤
+
+1. 前往本仓库的 [Releases 页面](https://github.com/FanDuck/Halo-FanDuck/releases) 下载最新版本的主题压缩包（`.zip`）。
+2. 登录你的 **Halo 博客后台**。
+3. 依次进入 **「外观」** ➡️ **「主题」** ➡️ **「安装主题」**，上传下载好的压缩包。
+4. 安装成功后，点击启用该主题，即可拥有一座崭新的数字小窝！🎉
+
+---
+
+## 💎 核心亮点速览
+
+- **✨ 视觉质感**：磨砂玻璃效果、卡片微立体阴影、浪漫的樱花飘落特效。
+- **🔌 插件深度联动**：完美适配 Halo 社区热门的搜索、评论、瞬间、图库、友链、追番等插件，功能全方位拉满。
+- **🍃 性能优化**：基于现代前端构建，加载轻量、响应迅速。
+
+---
+
+## 🙏 开源致谢与特别说明
+
+开源的世界因为分享、借鉴与传承而充满无限魅力。本项目的顺利诞生与完善，离不开开源社区中各位前辈与优秀作者的无私奉献：
+
+- **Halo 社区团队**：提供了一个极其优雅且强大的 Java 博客系统平台（[Halo](https://halo.run)）❤️。
+- **saicaca**：原版 Astro 主题的伟大创造者（[Fuwari](https://github.com/saicaca/fuwari)）🌟。
+- **Jevon (jiewenhuang)**：第一位将 Fuwari 风格移植到 Halo 平台的开拓者（[halo-theme-fuwari](https://github.com/jiewenhuang/halo-theme-fuwari)）🚀。
+- **AloneNanNan**：为 Ethereal 增强型主题倾注大量心血的优秀开发者（[Halo-Theme-Ethereal](https://github.com/AloneNanNan/halo-theme-ethereal)）👏。
+
+本项目严格遵循原作者的 **MIT 开源协议** 进行二次开发与分享。如果你也喜欢这个主题，欢迎点个 ⭐ 鼓励一下，这对我非常重要！
+
+---
+
+<p align="center">
+  <a href="https://github.com/FanDuck/Halo-FanDuck/graphs/contributors"><picture><source media="(prefers-color-scheme: dark)"srcset="https://shieldcn.dev/contributors/FanDuck/Halo-FanDuck.svg?preset=dots&amp;size=80&amp;names=true&amp;mode=dark&amp;font=space-grotesk" /><img alt="Contributors"src="https://shieldcn.dev/contributors/FanDuck/Halo-FanDuck.svg?preset=dots&amp;size=80&amp;names=true&amp;mode=light&amp;font=space-grotesk" /></picture></a>
+</p>
+ 
